@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+                .logo {
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      color: black;
+      max-width: 50px;
+      
+    }
+    body {
+      font-family: inherit;
+      background-color: #f9fbfd;
+    }
+    
+    /* HERO SECTION */
+#hero {
+  background: rgba(255, 255, 255, 0.9); /* Light overlay for readability */
+  background-image: url('C:\Users\yanda\OneDrive\Pictures\WhatsApp Image 2025-08-06 at 16.51.24_53725e2f.jpg'); /* Optional: add background image */
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #2c3e50;
+  position: relative;
+}
+
+#hero h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+
+#hero .lead {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#hero .text-muted {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+#hero .btn-primary {
+  background-color: #3b76e9;
+  border-color: #3b76e9;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+  background-color: #2a6bd2;
+  border-color: #2a6bd2;
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+  
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ensures it stays above other content */
+  background-color: #fff; /* optional: ensures background doesn't become transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional: adds subtle shadow */
+}
+    footer {
+      background-color: #3b76e9;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .logo-img { 
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+    }
+    /* CONTACT SECTION */
+#contact {
+  padding: 60px 0;
+  color: #2c3e50;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1c1c1c;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #3b76e9;
+}
+
+/* Contact Form */
+#contact form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form .btn-primary {
+  background-color: #3b76e9;
+  border-color: #3b76e9;
+  font-size: 1rem;
+  padding: 10px 25px;
+  transition: 0.3s ease-in-out;
+}
+
+#contact form .btn-primary:hover {
+  background-color: #2a6bd2;
+  border-color: #2a6bd2;
+}
+
+/* CONTACT SECTION */
+#contact {
+  padding: 60px 0;
+  color: #2c3e50;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1c1c1c;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i:hover {
+  color: #2a6bd2;
+  transition: color 0.3s ease-in-out;
+}
+
+
+/* Contact Form */
+#contact form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form .btn-primary {
+  background-color: #3b76e9;
+  border-color: #3b76e9;
+  font-size: 1rem;
+  padding: 10px 25px;
+  transition: 0.3s ease-in-out;
+}
+
+#contact form .btn-primary:hover {
+  background-color: #2a6bd2;
+  border-color: #2a6bd2;
+}
+section img{
+  max-width: 350px;
+  height: 350px;
+}
+header img{
+  max-width: 200px;
+  height: 90px;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color:white;
+  color:black;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color:white;
+}
+#scrollTopBtn {
+  display: none;
+}
+
+        </style>
+    </head>
+        <body>
+          
+         <!-- Navbar -->
+         <header class="navbar navbar-expand-lg navbar-light sticky-header">
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="images/Cenga Logo.jpg" alt="Law Firm Logo" class="logo-img mr-2"><br>
+              <span class="logo fs-4 fw-bold"><b> &nbsp;&nbsp;&nbsp;&nbsp;Cenga Attorneys <br>justice our wing to conquer.</b></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Services Page.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Team Page.html">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact Page.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <div class="row">
+        <!-- Service Card 1 -->
+        <!-- Service Card 1 -->
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Road Accident Fund Claims</h5>
+      <p>We assist victims of road accidents in claiming rightful compensation for injuries, medical costs, and loss of income from the Road Accident Fund (RAF).</p>
+    </div>
+  </div>
+</div>
+
+<!-- Service Card 2 -->
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Unlawful Arrest Claims</h5>
+      <p>If you've been wrongfully arrested or detained without cause, we help you seek legal redress and compensation through civil claims against the responsible authorities.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Service Card 3 -->
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Bail Applications</h5>
+      <p>Our legal team provides prompt and effective representation in securing bail, ensuring your rights are protected throughout the legal process.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Service Card 4 -->
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Divorce Matters</h5>
+      <p>We offer compassionate and strategic guidance through divorce proceedings, including maintenance, custody, and asset division issues.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Service Card 5 -->
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Civil Litigation</h5>
+      <p>Our firm handles a wide range of civil disputes, representing clients in contractual, property, and personal injury matters in both magistrate and high courts.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Service Card 6 -->
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Wills and Estate</h5>
+      <p>We assist with drafting wills, setting up trusts, and managing estate planning to ensure your assets are protected and distributed according to your wishes.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Service Card 7 -->
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Immigration</h5>
+      <p>Whether applying for visas, permanent residency, or resolving immigration disputes, our team guides individuals and families through every step of the process.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5>Eviction</h5>
+      <p>From defending tenants facing unlawful eviction to assisting landlords with legal procedures, our team provides clear guidance and representation to ensure fair outcomes and compliance with housing laws.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Cenga Attorneys.<br>justice our wing to conquer. All rights reserved.</p>
+    </div>
+
+  </footer>
+  <script>
+    function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  window.onscroll = function() {
+    const btn = document.getElementById("scrollTopBtn");
+    btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+  </script>
+
+</body>
+</html>

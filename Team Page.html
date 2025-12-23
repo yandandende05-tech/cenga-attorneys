@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+                .logo {
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      color: black;
+      max-width: 50px;
+      
+    }
+    body {
+      font-family: inherit;
+      background-color: #f9fbfd;
+    }
+    
+    /* HERO SECTION */
+#hero {
+  background: rgba(255, 255, 255, 0.9); /* Light overlay for readability */
+  background-image: url('C:\Users\yanda\OneDrive\Pictures\WhatsApp Image 2025-08-06 at 16.51.24_53725e2f.jpg'); /* Optional: add background image */
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #2c3e50;
+  position: relative;
+}
+
+#hero h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+
+#hero .lead {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#hero .text-muted {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+#hero .btn-primary {
+  background-color: #3b76e9;
+  border-color: #3b76e9;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+  background-color: #2a6bd2;
+  border-color: #2a6bd2;
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+  
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ensures it stays above other content */
+  background-color: #fff; /* optional: ensures background doesn't become transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional: adds subtle shadow */
+}
+    footer {
+      background-color: #3b76e9;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .logo-img { 
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+    }
+    /* CONTACT SECTION */
+#contact {
+  padding: 60px 0;
+  color: #2c3e50;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1c1c1c;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #3b76e9;
+}
+
+/* Contact Form */
+#contact form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form .btn-primary {
+  background-color: #3b76e9;
+  border-color: #3b76e9;
+  font-size: 1rem;
+  padding: 10px 25px;
+  transition: 0.3s ease-in-out;
+}
+
+#contact form .btn-primary:hover {
+  background-color: #2a6bd2;
+  border-color: #2a6bd2;
+}
+
+/* CONTACT SECTION */
+#contact {
+  padding: 60px 0;
+  color: #2c3e50;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1c1c1c;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i:hover {
+  color: #2a6bd2;
+  transition: color 0.3s ease-in-out;
+}
+
+
+/* Contact Form */
+#contact form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form .btn-primary {
+  background-color: #3b76e9;
+  border-color: #3b76e9;
+  font-size: 1rem;
+  padding: 10px 25px;
+  transition: 0.3s ease-in-out;
+}
+
+#contact form .btn-primary:hover {
+  background-color: #2a6bd2;
+  border-color: #2a6bd2;
+}
+section img{
+  max-width: 350px;
+  height: 350px;
+}
+header img{
+  max-width: 200px;
+  height: 90px;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color:white;
+  color:black;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color:white;
+}
+#scrollTopBtn {
+  display: none;
+}
+
+        </style>
+    </head>
+    <body>
+       <!-- Navbar -->
+       <header class="navbar navbar-expand-lg navbar-light sticky-header">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/Cenga Logo.jpg" alt="Law Firm Logo" class="logo-img mr-2"><br>
+            <span class="logo fs-4 fw-bold"><b> &nbsp;&nbsp;&nbsp;&nbsp;Cenga Attorneys <br>justice our wing to conquer.</b></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services Page.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Team Page.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact Page.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+        
+  <!-- Team Section -->
+  <section id="team" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Meet Our Team</h2>
+      <p><b>Our dedicated team of attorneys brings decades of experience.</b></p>
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Olwethu.jpg" class="rounded-circle mx-auto d-block" alt="Attorney Profile">
+          <h5 class="mt-3">Olwethu Cenga</h5>
+          <p>Director</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Clerk.jpg" class="rounded-circle mx-auto d-block" alt="Attorney Profile">
+          <h5 class="mt-3">Langakazi Mneno</h5>
+          <p>Managing Clerk</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Philasande.jpg" class="rounded-circle mx-auto d-block" alt="Attorney Profile">
+          <h5 class="mt-3">Philasande Ndlovu</h5>
+          <p>Paralegal</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <img src="images/Team.jpg" class="rounded-circle mx-auto d-block" alt="Attorney Profile">
+          <h5 class="mt-3"></h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Cenga Attorneys.<br>justice our wing to conquer. All rights reserved.</p>
+    </div>
+
+  </footer>
+  <script>
+    function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  window.onscroll = function() {
+    const btn = document.getElementById("scrollTopBtn");
+    btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+  </script>
+  </body>
+</html>
